@@ -3,7 +3,11 @@
 # 猜對的話 印出"終於猜對了!"
 # 猜錯的話 要告訴他比答案大或少
 import random
-answer = random.randint (1, 100)
+start = input ('請決定隨機數字的開始值? ')
+end = input ('請決定隨機數字的結束值? ')
+start = int(start)
+end = int(start)
+answer = random.randint (start, end)
 count = 0
 while True:
 	count = count + 1
